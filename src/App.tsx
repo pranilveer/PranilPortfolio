@@ -36,7 +36,7 @@ const App: React.FC = () => {
         <AppBar position="static" sx={{ zIndex: 1 }}>
           <Toolbar>
             <Typography variant="h6" sx={{ flexGrow: 1 }}>
-              Your Name
+              Pranil
             </Typography>
             <IconButton onClick={toggleTheme} color="inherit">
               {darkMode ? <Brightness7Icon /> : <Brightness4Icon />}

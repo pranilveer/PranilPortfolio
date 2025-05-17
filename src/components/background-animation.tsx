@@ -45,12 +45,9 @@ const Particles: React.FC<ParticleProps> = ({ darkMode }) => {
   return (
     <points ref={particlesRef}>
       <bufferGeometry>
-        <bufferAttribute
-          attach="attributes-position"
-          array={positions}
-          itemSize={3}
-          count={particleCount}
-        />
+        <bufferAttribute 
+        attach="attributes-position"
+         args={[positions, 3]} />
       </bufferGeometry>
       <pointsMaterial
         color={darkMode ? '#ffffff' : '#1976d2'}
